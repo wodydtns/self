@@ -1,4 +1,4 @@
-package self.project.study;
+package account.project;
 
 import javax.persistence.EntityManager;
 

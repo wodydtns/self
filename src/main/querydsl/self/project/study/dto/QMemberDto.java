@@ -2,6 +2,8 @@ package self.project.study.dto;
 
 import com.querydsl.core.types.dsl.*;
 
+import account.project.dto.MemberDto;
+
 import com.querydsl.core.types.ConstructorExpression;
 import javax.annotation.processing.Generated;
 

@@ -1,4 +1,4 @@
-package self.project.study.entity;
+package account.project.entity;
 
 import java.util.Date;
 

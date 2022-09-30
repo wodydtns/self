@@ -1,4 +1,4 @@
-package self.project.study.repository;
+package account.project.repository;
 
 
 import org.springframework.stereotype.Repository;
@@ -6,10 +6,12 @@ import org.springframework.util.StringUtils;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import self.project.study.dto.MemberDto;
-import self.project.study.entity.Member;
+import account.project.dto.MemberDto;
+import account.project.entity.Member;
 
 import static self.project.study.entity.QMember.member;
+
+import java.sql.SQLException;
 
 import javax.inject.Inject;
 
@@ -23,7 +25,7 @@ public class MemberJpaRepository {
 		this.queryFactory = queryFactory;
 	}
 	
-	public  Member login(MemberDto memberDto) {
+	public  Member login(MemberDto memberDto) throws SQLException{
 		if(StringUtils.hasText(memberDto.getMemberId()) && StringUtils.hasText(memberDto.getMemberPassword())) {
 			return queryFactory.selectFrom(member).where(member.memberId.eq(memberDto.getMemberId()) , member.memberPassword.eq(memberDto.getMemberPassword())).fetchOne();
 		}
