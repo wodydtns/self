@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<th:block th:fragment="topbarFragment">
+
+    <!-- Topbar -->
+    <section class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    	<form action="/loginProcessing" method="post">
+			<span th:text="${rsa['privateKey']}"></span>
+			<span th:text="${rsa['modulus']}"></span>
+			<span th:text="${rsa['exponent']}"></span>
+			<input type="hidden" id="privateKey" name="privateKey" th:value="${rsa['privateKey']}"/>
+			<input type="hidden" id="modulus" name="modulus" th:value="${rsa['modulus']}"/>
+			<input type="hidden" id="exponent" name="exponent" th:value="${rsa['exponent']}"/>
+			<div>
+			<label for="memberId">아이디 : </label>
+			<input type="text" id="memberId" name="memberId" value=""/>
+			<label for="memberPassword">비밀번호 : </label>
+			<input type="password" id="memberPassword" name="memberPassword" value=""/>
+			<button type="submit">로그인</button>
+			</div>
+    	</form>
+    </section>
+    
+
+</th:block>
+</html>
