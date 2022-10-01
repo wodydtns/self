@@ -17,7 +17,7 @@ spring:
    enabled: true
    cache: false
    check-template-location: true
-   prefix: classpath:templates/layout/
+   prefix: classpath:templates/
    suffix: .html
  mvc:
     static-path-pattern: /static/**   

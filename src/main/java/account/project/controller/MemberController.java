@@ -36,7 +36,7 @@ public class MemberController {
 			e.printStackTrace();
 		}
 		
-		return "layout";
+		return "page/content";
 	}
 	
 	@PostMapping(path="/loginProcessing")
@@ -44,12 +44,12 @@ public class MemberController {
 	public String loginProcess(MemberDto memberDto,Model model,HttpServletRequest request) throws Exception {
 		Member member =memberService.loginProcess(memberDto); 
 		model.addAttribute("member", member);
-		return "layout";
+		return "page/index";
 	}
 	
 	@GetMapping(path = "/")
 	@ApiOperation(value = "index 페이지")
 	public String index(Model model) {
-		return "layout";
+		return "page/content";
 	}
 }

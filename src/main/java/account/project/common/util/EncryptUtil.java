@@ -10,8 +10,11 @@ import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPublicKeySpec;
 
+import org.springframework.stereotype.Component;
+
 import account.project.entity.RSA;
 
+@Component
 public class EncryptUtil {
 
 	public String getSHA256Encrypt(String text, String salt) throws Exception {
