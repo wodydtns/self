@@ -1,4 +1,4 @@
-package account.project.study.impl;
+package self.art.study.impl;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
@@ -8,12 +8,12 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import account.project.common.util.EncryptUtil;
-import account.project.dto.MemberDto;
-import account.project.entity.Member;
-import account.project.entity.RSA;
-import account.project.repository.MemberJpaRepository;
-import account.project.service.MemberService;
+import self.art.common.util.EncryptUtil;
+import self.art.dto.MemberDto;
+import self.art.entity.Member;
+import self.art.entity.RSA;
+import self.art.repository.MemberJpaRepository;
+import self.art.service.MemberService;
 
 @Service
 public class MemberServiceImpl implements MemberService {

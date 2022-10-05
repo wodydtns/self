@@ -1,4 +1,4 @@
-package account.project;
+package self.art;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

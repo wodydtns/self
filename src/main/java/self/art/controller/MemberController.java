@@ -1,4 +1,4 @@
-package account.project.controller;
+package self.art.controller;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
@@ -12,12 +12,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import account.project.dto.MemberDto;
-import account.project.entity.Member;
-import account.project.entity.RSA;
-import account.project.service.MemberService;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import self.art.dto.MemberDto;
+import self.art.entity.Member;
+import self.art.entity.RSA;
+import self.art.service.MemberService;
 
 @Controller
 @RequiredArgsConstructor

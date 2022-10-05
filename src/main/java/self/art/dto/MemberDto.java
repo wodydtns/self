@@ -1,4 +1,4 @@
-package account.project.dto;
+package self.art.dto;
 
 import com.querydsl.core.annotations.QueryProjection;
 

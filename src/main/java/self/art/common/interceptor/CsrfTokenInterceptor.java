@@ -1,4 +1,4 @@
-package account.project.common.interceptor;
+package self.art.common.interceptor;
 
 import java.io.IOException;
 import java.util.Random;
@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import account.project.common.collection.ProjectEnum;
+import self.art.common.collection.ProjectEnum;
 
 public class CsrfTokenInterceptor implements HandlerInterceptor {
 	private static final Logger LOGGER = LoggerFactory.getLogger(CsrfTokenInterceptor.class);

@@ -1,4 +1,4 @@
-package account.project.common.collection;
+package self.art.common.collection;
 
 public enum ProjectEnum {
 	SESSION_ADMIN_KEY("ADMIN_login");

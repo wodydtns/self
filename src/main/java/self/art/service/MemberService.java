@@ -1,12 +1,12 @@
-package account.project.service;
+package self.art.service;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.sql.SQLException;
 
-import account.project.dto.MemberDto;
-import account.project.entity.Member;
-import account.project.entity.RSA;
+import self.art.dto.MemberDto;
+import self.art.entity.Member;
+import self.art.entity.RSA;
 
 public interface MemberService {
 	public Member loginProcess(MemberDto memberDto)  throws SQLException;

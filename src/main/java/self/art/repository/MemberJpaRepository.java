@@ -1,4 +1,4 @@
-package account.project.repository;
+package self.art.repository;
 
 
 import org.springframework.stereotype.Repository;
@@ -6,8 +6,8 @@ import org.springframework.util.StringUtils;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import account.project.dto.MemberDto;
-import account.project.entity.Member;
+import self.art.dto.MemberDto;
+import self.art.entity.Member;
 
 import static self.project.study.entity.QMember.member;
 

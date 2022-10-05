@@ -1,4 +1,4 @@
-package account.project.common.interceptor;
+package self.art.common.interceptor;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import account.project.common.collection.ProjectEnum;
+import self.art.common.collection.ProjectEnum;
 
 
 public class CsrfCheckInterceptor implements HandlerInterceptor {

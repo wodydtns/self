@@ -1,4 +1,4 @@
-package account.project;
+package self.art;
 
 import javax.persistence.EntityManager;
 

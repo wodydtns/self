@@ -1,4 +1,4 @@
-package account.project.common.interceptor;
+package self.art.common.interceptor;
 
 import java.io.IOException;
 

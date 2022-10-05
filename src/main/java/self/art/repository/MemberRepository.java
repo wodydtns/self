@@ -1,11 +1,11 @@
-package account.project.repository;
+package self.art.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import account.project.dto.MemberDto;
-import account.project.entity.Member;
+import self.art.dto.MemberDto;
+import self.art.entity.Member;
 
 public interface MemberRepository extends JpaRepository<Member, Long>{
 	

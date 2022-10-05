@@ -1,4 +1,4 @@
-package account.project.common.util;
+package self.art.common.util;
 
 import java.security.KeyFactory;
 import java.security.KeyPair;
@@ -12,7 +12,7 @@ import java.security.spec.RSAPublicKeySpec;
 
 import org.springframework.stereotype.Component;
 
-import account.project.entity.RSA;
+import self.art.entity.RSA;
 
 @Component
 public class EncryptUtil {
